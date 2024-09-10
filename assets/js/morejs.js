@@ -19,16 +19,24 @@ truncateArticles('.articalContent', 100);
 
 // * time 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.btn').addEventListener('click', timefu);
+  let button = document.querySelector('.btn');
+  
+  if (button) {
+    button.addEventListener('click', timefu);
+  } 
 
   function timefu() {
     let in_date = new Date();
     let formattedDate = in_date.getDate() + '/' + (in_date.getMonth() + 1) + '/' + in_date.getFullYear();
     let time = in_date.getHours() + ":" + in_date.getMinutes();
+    let fullDateTime = formattedDate + ' ' + time;
 
-    let fullDateTime = formattedDate + ':' + time;
-    document.querySelector('input[name="time"]').value = fullDateTime;
-
-
+    let inputField = document.querySelector('input[name="time"]');
+    if (inputField) {
+      inputField.value = fullDateTime;
+    } else {
+      console.error('Input field with name "time" not found');
+    }
   }
 });
+

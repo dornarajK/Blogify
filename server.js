@@ -15,10 +15,11 @@ const PORT = process.env.PORT || 8080;
 
 // Middleware setup
 const corsOptions = {
-  origin: '*', 
+  origin: '*',
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization'
 };
+
 
 app.use(cors(corsOptions));
 app.options('*', cors(corsOptions)); // Pre-flight request handler
@@ -36,10 +37,8 @@ app.set('view engine', 'ejs');
 
 
 //allw to use css styiling
-app.use('/css', (req, res, next) => {
-  res.setHeader('Content-Type', 'text/css');
-  express.static(path.resolve(__dirname, 'assets/css'))(req, res, next);
-});
+app.use('/css', express.static(path.join(__dirname, 'assets/css')));
+
 
 // allw to use img and js assets
 app.use('/img', express.static(path.resolve(__dirname, 'assets/img')));
