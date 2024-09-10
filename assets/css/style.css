@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #111161;
+  --light: #adb5bd;
+  --border: #dee2e6;
+  --border-btn: #edf2f4;
+
+}
+
+/* background-color: var(--dark); */
+
+body {
+  background-color: aliceblue;
+  font-family: 'Merienda', cursive;
+}
+
+/*? Header */
+header {
+  background-color: black;
+  color: white;
+  height: 25vh;
+}
+
+.logo {
+  margin-left: 50px;
+  padding-top: 30px;
+
+}
+
+.logo span {
+  color: rgb(162, 0, 255);
+}
+
+.Heading {
+  text-align: center;
+  margin-bottom: 27px;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif
+}
+
+.Description {
+  text-align: center;
+
+}
+
+/* ?main */
+.box-nav a {
+  /* background-color: #706FAE; */
+  color: black;
+  text-decoration: none;
+  margin-left: 3px;
+  font-size: 17px;
+}
+
+.box-nav i {
+  margin-left: 2px;
+}
+
+.ContentCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexContent {
+  display: flex;
+  justify-content: center;
+  width: 200vh;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+
+.Maindiv {
+  border: #111161 solid 1px;
+  background-image: url("/img/image.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  width: 55vh;
+  height: 35vh;
+  display: flex;
+  border-radius: 27px;
+
+
+}
+
+.art {
+  width: 100%;
+  height: 100%;
+
+}
+
+.end {
+  text-align: end;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Blog-A-Data {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "DM Serif Text", serif;
+
+}
+
+.articalContent {
+
+  min-height: 10vh;
+  max-height: 10vh;
+  margin-bottom: auto;
+/* border: solid 1px black; */
+
+}
+
+.contentno {
+  width: 300px;
+  margin-top: 5px;
+  overflow: hidden;
+  margin-bottom: auto;
+
+
+}
+
+.extraInf {
+
+  margin-left: 10px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  /* border: solid red; */
+
+
+}
+
+.optioButton {
+  text-align: center;
+
+}
+
+.buttons {
+  margin: 5px;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+
+.optioButton .Edit {
+  color: #00ddff;
+}
+
+
+.optioButton .Delete {
+  color: #ff0000;
+}
+
+.optioButton .More {
+
+  color: #00ff2a;
+
+
+}
+
+/*  */
+
+.Edit:hover {
+  color: #07a3bb;
+}
+
+
+.Delete:hover {
+  color: #cb0909;
+}
+
+.More:hover {
+
+  color: #03b120;
+
+
+}
+
+/* ? add arical _form.ejs*/
+/* General form styling */
+
+#add_Artical,
+#update-Artical {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+
+#add_Artical .form-group,
+#update-Artical .form-group {
+
+  margin-bottom: 20px;
+}
+
+#add_Artical label #update-Artical label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+#add_Artical input[type="text"],
+textarea,
+#update-Artical input[type="text"],
+textarea {
+
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#add_Artical textarea,
+#update-Artical textarea {
+
+  resize: vertical;
+  /* Allows vertical resizing only */
+  overflow: auto;
+  height: 100px;
+  resize: vertical;
+}
+
+/* Button styling */
+#add_Artical .btn,
+#update-Artical .btn {
+  display: inline-block;
+  background-color: #02ff24;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+
+
+}
+
+#add_Artical .btn:hover,
+#update-Artical .btn:hover {
+  transition: 0.5s ease;
+
+  box-shadow: 3px 5px 5px rgb(136, 138, 139);
+}
+
+
+
+
+
+
+.titleContent {
+  margin-bottom: 4px;
+  font-size: 19px;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+
+}
+
+.descriptionContent {
+  font-size: 15px;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  max-height: 40px;
+  min-height: 40px;
+
+}
+
+
+/** redMore.ejs */
+.blogging{
+  margin-top: 0px;
+  padding: 30px;
+  
+}
+
+.RMtitle{
+  margin: 10px 0px 30px 0px;
+ 
+}
+
+.RMdescription{
+  margin: 0px 0px 30px 0px;
+}
+
+
+
+
+
+/*? Footer */
+footer {
+
+  text-align: center;
+  background-color: black;
+  color: var(--dark);
+
+  height: 9vh;
+  color: white;
+  font-size: 9px;
+  height: auto;
+  margin-top: 40%;
+  
+
+}
+
+
+
+

@@ -1,0 +1,30 @@
+<form action="/api/blog" method="POST" id="add_Artical">
+    <div class="new_Blog">
+        <div class="form-grup">
+            <label for="yourName" class="text-light">Writer</label>
+            <input type="text" name="yourName" id="yourName" placeholder="Your name">
+        </div>
+        <h2 class="blog-data">Make your Blog: </h2>
+        <div class="form-grup">
+            <label for="title" class="text-light">Title</label>
+            <input type="text" name="title" id="title" placeholder="title">
+        </div>
+
+        <div class="form-grup">
+            <label for="description" class="text-light">Description</label>
+            <input type="text" name="description" id="description" placeholder="description">
+        </div>
+
+        <div class="form-grup">
+            <label for="artical" class="text-light">Artical</label>
+            <textarea name="artical" id="artical" placeholder="Artical"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="hidden" name="time" value="">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+       
+    </div>
+    
+</form>

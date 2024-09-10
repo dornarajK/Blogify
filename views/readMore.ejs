@@ -1,0 +1,33 @@
+<%-include('include/_header')%>
+
+  <section class="kkkkk">
+    <div class="box-nav">
+      <a href="/" class="border-shadow">
+        <span class="text-gradient"><i class="fa-solid fa-arrow-left-long"></i> Go back</span>
+      </a>
+    </div>
+
+    <!--! Read More -->
+
+    <div class="extraInf">
+      <p>
+        <i class="fa-solid fa-user"></i>:<%= blog.yourName %> <span></span>
+
+          <p>Published: <span>
+              <%= blog.time %>
+            </span></p>
+    </div>
+    <div class="blogging">
+      <h1 class="RMtitle">
+        <%= blog.title %>
+      </h1>
+      <h3 class="RMdescription">
+        <%= blog.description %>
+      </h3>
+      <p>
+        <%= blog.artical %>
+      </p>
+    </div>
+
+  </section>
+  <%- include('include/_footer')%>

@@ -1,0 +1,56 @@
+<% for(var i=0; i < blog.length; i++) { %>
+
+  <div class="Maindiv">
+    <div class="art">
+
+      <div class="artical">
+        <div class="Blog-A-Data">
+          <h1 class="titleContent">
+            <%= blog[i].title %>
+          </h1>
+          <h2 class="descriptionContent">
+            <%= blog[i].description %>
+          </h2>
+          <div class="contentno">
+            <p class="articalContent">
+              <%= blog[i].artical %>
+            </p>
+          </div>
+        </div>
+        <div class="extraInf">
+          <p>
+            <i class="fa-solid fa-user"></i>: <span><%= blog[i].yourName %> </span>
+          </p>
+          <p>Published: <span><%= blog[i].time %></span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="end">
+      <div class="optioButton">
+
+        <!-- <a href="/readMore?id=<%= blog[i]._id %>" class="More buttons"> -->
+        <a href="/readMore?id=<%= blog[i]._id %>" class="More buttons">
+
+          <div>
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+        </a>
+        <a href="/UpdateArtical?id=<%= blog[i]._id %>" class="Edit buttons">
+          <div>
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+        </a>
+        <a class="Delete buttons" data-id="<%= blog[i]._id %>">
+          <div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <% } %>
